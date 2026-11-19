@@ -14,13 +14,13 @@ pipeline {
 
         stage('Compile') {
             steps {
-                sh 'javac java.java'
+                sh 'javac jen.java'
             }
         }
 
         stage('Execute') {
             steps {
-                sh 'echo "$INPUT" | java java'
+                sh 'echo "$INPUT" | java jen'
             }
         }
     }
